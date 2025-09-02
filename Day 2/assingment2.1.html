@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Seat Booking</title>
+</head>
+<body style="display: flex; justify-content: center;">
+ <div style="width: 600px; margin: auto; border: 1px solid black; padding: 20px; background-color: beige;"> 
+    <h1><u>Bus Seat Booking Form</u></h1>
+
+  <form action="/submit-booking" method="POST">
+    <!-- Seat Number -->
+    <label for="seat">Choose Seat Number:</label>
+    <select id="seat" name="seat" required>
+      <option value="">--Select Seat--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      
+    </select>
+    <br><br>
+
+    <!-- AC or Non-AC -->
+    <label>Bus Type:</label><br>
+    <input type="radio" id="ac" name="bus_type" value="AC" required />
+    <label for="ac">AC</label><br>
+
+    <input type="radio" id="nonac" name="bus_type" value="Non-AC" />
+    <label for="nonac">Non-AC</label>
+    <br><br>
+
+    <!-- Payment Mode -->
+    <label for="payment">Payment Mode:</label>
+    <select id="payment" name="payment" required>
+      <option value="">--Select Payment Mode--</option>
+      <option value="Credit Card">Credit Card</option>
+      <option value="Debit Card">Debit Card</option>
+      <option value="UPI">UPI</option>
+      <option value="Net Banking">Net Banking</option>
+      <option value="Cash">Cash</option>
+    </select>
+    <br><br>
+
+    <!-- Submit Button -->
+     <button type="submit">Seat Booked</button>
+  </form>
+
+  <p>Thank you for booking with us! Have a safe and pleasant journey 🚌</p>
+
+  </div> 
+</body>
+</html>
