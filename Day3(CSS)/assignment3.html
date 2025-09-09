@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Cards Example</title>
+   
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #935050;
+            margin: 0;
+            padding: 40px;
+        }
+        .container {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 24px 20px;
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .card h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+        }
+        .card label, .card select, .card input[type="submit"] {
+            margin-top: 8px;
+        }
+        .card .price {
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .card form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .card input[type="submit"] {
+            background: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px;
+            margin-top: 12px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+        .card input[type="submit"]:hover {
+            background: #219150;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Avocado Toast">
+            <h2>Avocado Toast</h2>
+            <div class="price">₹120</div>
+            <form>
+                <label for="avocado-option">Choose an option:</label>
+                <select id="avocado-option" name="option">
+                    <option value="classic">Classic</option>
+                    <option value="with-egg">With Egg</option>
+                    <option value="spicy">Spicy</option>
+                </select>
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+       
+
+
+        <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9hCCT4NGYhkIiJ74uovvTyX07tY1eL5w9xQ&s" alt="Paneer Sandwich">
+            <h2>Paneer Sandwich</h2>
+            <div class="price">₹100</div>
+            <form>
+                <label for="paneer-option">Choose an option:</label>
+                <select id="paneer-option" name="option">
+                    <option value="grilled">Grilled</option>
+                    <option value="cheese">With Cheese</option>
+                    <option value="spicy">Spicy</option>
+                </select>
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+        
+
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Peanut Spread">
+            <h2>Blue Berry</h2>
+            <div class="price">₹80</div>
+            <form>
+                <label for="peanut-option">Choose an option:</label>
+                <select id="peanut-option" name="option">
+                    <option value="classic">Classic</option>
+                    <option value="crunchy">Salted</option>
+                    <option value="honey">Sweet</option>
+                </select>
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+    </div>
+</body>
