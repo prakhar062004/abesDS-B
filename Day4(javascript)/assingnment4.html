@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Header Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background: #fff;
+      border-bottom: 10px solid #e0e0e0;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 1; /* takes space */
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      font-size: 22px;
+      font-weight: bold;
+      color: #2874f0;
+      white-space: nowrap;
+      line-height: 1.2;
+    }
+    .logo span {
+      font-size: 12px;
+      color: gold;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      flex: 1; 
+      background: #f0f0f0;
+      border-radius: 4px;
+      padding: 6px 12px;
+      width: 500px;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-size: 18px;
+      padding: 8px;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      font-size: 25px;
+      margin-left: 20px; 
+    }
+
+    .navbar-right div {
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .category-row {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      align-items: center;
+      text-align: center;
+      padding: 10px 20px;
+      gap: 10px;
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .category img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="logo">Flipkart <span>Explore Plus ✨</span></div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for Products, Brands and More">
+      </div>
+
+    
+      <div class="navbar-right">
+         <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="">
+        <div>Login</div>
+        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="">
+        <div>Cart</div>
+        <div>Become a Seller</div>
+        <div>⋮</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="category-row">
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" alt="Minutes">
+      <span>Minutes</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" alt="Mobiles">
+      <span>Mobiles & Tablets</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100" alt="Fashion">
+      <span>Fashion</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100" alt="Electronics">
+      <span>Electronics</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/1788f177649e6991.png?q=100" alt="Home">
+      <span>Home & Furniture</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" alt="TVs">
+      <span>TVs & Appliances</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" alt="Flights">
+      <span>Flight Bookings</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/b3020c99672953b9.png?q=100" alt="Beauty">
+      <span>Beauty, Food..</span>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e730a834ad950bae.png?q=100" alt="Grocery">
+      <span>Grocery</span>
+    </div>
+  </div>
+
+</body>
+</html>
