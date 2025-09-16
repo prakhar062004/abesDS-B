@@ -11,24 +11,39 @@
    
 </head>
 <body id="body1">
-    <button>Blue</button>
-    <button>Green</button>
-    <button>Yellow</button>
+    <button onclick="Blue()">Blue</button>
+    <button onclick="Green()">Green</button>
+    <button onclick="Yellow()">Yellow</button>
 
 
 
 
-    <div id="div1">
+
+    <!-- <div id="div1">
         <button onclick="">Click</button>
         <p id="para"></p>
 
-    </div>
+    </div> -->
     <script>
-        function changeColor(){
-            document.getElementById("div1").style.backgroundColor="yellow";
-            document.getElementById("para").innerHTML="Hello world";
+        function Blue(){
+            document.getElementById("body1").style.backgroundColor="blue";
         }
-        document.querySelector("button").onclick=changeColor;
+        function Green(){
+            document.getElementById("body1").style.backgroundColor="green";
+        }
+        function Yellow(){
+            document.getElementById("body1").style.backgroundColor="yellow";
+        }
+       
+
+
+
+
+        // function changeColor(){
+        //     document.getElementById("div1").style.backgroundColor="yellow";
+        //     document.getElementById("para").innerHTML="Hello world";
+        // }
+        // document.querySelector("button").onclick=changeColor;
         // function abes(){
         //     document.write("hello world");
         // }
