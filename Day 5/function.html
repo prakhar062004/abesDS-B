@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+    </style>
    
 </head>
-<body>
+<body id="body1">
+    <button>Blue</button>
+    <button>Green</button>
+    <button>Yellow</button>
+
+
+
+
+    <div id="div1">
+        <button onclick="">Click</button>
+        <p id="para"></p>
+
+    </div>
     <script>
-        function abes(){
-            document.write("hello world");
+        function changeColor(){
+            document.getElementById("div1").style.backgroundColor="yellow";
+            document.getElementById("para").innerHTML="Hello world";
         }
-        abes();
-        function add(a,b){
-            return a+b;
-        }
+        document.querySelector("button").onclick=changeColor;
+        // function abes(){
+        //     document.write("hello world");
+        // }
+        // abes();
+        // function add(a,b){
+        //     return a+b;
+        // }
         
-        let c=add(5,6);
-        document.write(c);
+        // let c=add(5,6);
+        // document.write(c);
         
 
-        function sub(a,b){
-            return a-b;
-        }
-        let d=sub(5,6);
-        document.write(d);
+        // function sub(a,b){
+        //     return a-b;
+        // }
+        // let d=sub(5,6);
+        // document.write(d);
+
+        
+
+
 
         
     </script>
