@@ -4,6 +4,69 @@
     
 </head>
 <body>
+    <style>
+        #container2{
+            width: 400px;
+            height: auto;
+            border: 2px solid black;
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+            background-color: lightgrey;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+        #container{
+            width: 400px;
+            height: auto;
+            border: 2px solid black;
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+            background-color: lightgrey;
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            color: darkblue;
+        }
+        p{
+            font-size: 18px;
+            color: darkgreen;
+        }
+    </style>
+    <div id="container">
+        <h1>Student Details</h1>
+       
+        <p id="stud"></p>
+   </div>
+ 
+   <div id="container2">
+      <h1>Student Details</h1>
+    <p id="stud2"></p>
+
+   </div>
+    <script>
+        class team{
+            constructor (Name,Class, Roll_NO , section){
+                this.Name=Name;
+                this.Class=Class;
+                this.Roll_NO=Roll_NO;
+                this.section=section;
+            }   
+        }
+            const member1=new team("Prakhyat","Btech",2100501070093,"DS-B");
+            const member2=new team("Ankit","Btech",2100501070087,"DS-B");
+            const member3=new team("Ritik","Btech",2100501070090,"DS-B");
+            const member4=new team("Sahil","Btech",2100501070095,"DS-A");
+            const member5=new team("Yash","Btech",2100501070101,"DS-A");
+
+            
+            document.getElementById("stud").innerHTML=member1.Name+" "+member1.Class+" "+member1.Roll_NO+" "+member1.section+"<br>"+member2.Name+" "+member2.Class+" "+member2.Roll_NO+" "+member2.section+"<br>"+member3.Name+" "+member3.Class+" "+member3.Roll_NO+" "+member3.section;
+
+            document.getElementById("stud2").innerHTML+=member4.Name+" "+member4.Class+" "+member4.Roll_NO+" "+member4.section+"<br>"+member5.Name+" "+member5.Class+" "+member5.Roll_NO+" "+member5.section;
+           
+
+    </script>
     
 </body>
 </html>
