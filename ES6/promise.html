@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+
+
+    
+</head>
+<body>
+       <script>
+       const my_promise =new Promise((resolve,reject)=>{
+        let password="prakhar";
+        if (password.length>=8) {
+            resolve("strong password");
+        } else {
+            reject("weak password");
+        }
+
+
+       })
+       my_promise.then((message)=>{
+        console.log(message);
+       }).catch((err)=>{
+        console.log(err);
+
+       })
+       </script>
+    
+
+   
+</body>
+</html>
