@@ -5,7 +5,7 @@ import './Nav.css'
 const nav   = () => {
   return (
     <div nav id='nav'>
-        <h1>Navigation Bar</h1>
+        <h1>Home</h1>
     </div>
   )
 }

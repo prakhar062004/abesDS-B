@@ -1,0 +1,20 @@
+{
+  "name": "abes-ds-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prakhar062004/abesDS-B.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prakhar062004/abesDS-B/issues"
+  },
+  "homepage": "https://github.com/prakhar062004/abesDS-B#readme",
+  "description": ""
+}
