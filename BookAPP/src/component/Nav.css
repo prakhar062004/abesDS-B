@@ -1,0 +1,17 @@
+#nav{
+    border: 2px solid red;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+
+}
+#nav span{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+span:hover{
+    background-color: grey;
+}

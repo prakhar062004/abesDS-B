@@ -17,10 +17,10 @@ function Book(props) {
   return (
     <div id='book1'>
         <img src="https://kittymariebookreviews.home.blog/wp-content/uploads/2019/08/the-book-of-atrix-wolfe.jpg?w=266" alt=""  height={200} width={200}/>
-        <h1>Title:{props.Title}</h1>
+        <h1>Tittle:{props.Title}</h1>
         <h1>Price:{props.Price}</h1>
 
-              <button onClick={increment}>+</button>
+       <button onClick={increment}>+</button>
       <span>{cnt}</span>
       <button onClick={decrement}>-</button>
 
